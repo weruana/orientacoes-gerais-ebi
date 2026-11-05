@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Orientações Gerais — Espaço Bíblico Infantil</title>
+<style>
+html,body{height:100%;margin:0;background:#f4f4f4;font-family:Arial,sans-serif}
+header{box-sizing:border-box;min-height:54px;padding:12px 18px;background:#fff;border-bottom:1px solid #ddd;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+header strong{font-size:14px}a{color:#1659a7}iframe{width:100%;height:calc(100% - 54px);border:0;display:block}
+</style>
+</head>
+<body>
+<header><strong id="heading">Orientações Gerais do EBI — Página 2</strong><a id="newtab" href="orientacoes.pdf#page=2" target="_blank" rel="noopener">Abrir PDF em nova aba</a></header>
+<iframe id="pdf" src="orientacoes.pdf#page=2" title="Orientações Gerais do EBI, página 2"></iframe>
+<script>
+const params=new URLSearchParams(location.search);
+const requested=Number(params.get('page'));
+const page=Number.isInteger(requested)&&requested>=1&&requested<=4?requested:2;
+const pdfUrl='orientacoes.pdf#page='+page;
+document.getElementById('pdf').src=pdfUrl;
+document.getElementById('newtab').href=pdfUrl;
+document.getElementById('heading').textContent='Orientações Gerais do EBI — Página '+page;
+document.title='Orientações Gerais do EBI — Página '+page;
+</script>
+</body>
+</html>
